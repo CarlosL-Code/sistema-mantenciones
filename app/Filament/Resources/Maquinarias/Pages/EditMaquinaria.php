@@ -22,8 +22,8 @@ class EditMaquinaria extends EditRecord
         ];
     }
 
-    public function getMaxContentWidth(): \Filament\Support\Enums\Width | string | null
+    public function getMaxContentWidth(): \Filament\Support\Enums\MaxWidth | string | null
     {
-        return \Filament\Support\Enums\Width::SevenExtraLarge;
+        return \Filament\Support\Enums\MaxWidth::SevenExtraLarge;
     }
 }

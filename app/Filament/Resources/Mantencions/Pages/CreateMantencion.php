@@ -14,9 +14,9 @@ class CreateMantencion extends CreateRecord
         return $this->getResource()::getUrl('index');
     }
 
-    public function getMaxContentWidth(): \Filament\Support\Enums\Width | string | null
+    public function getMaxContentWidth(): \Filament\Support\Enums\MaxWidth | string | null
     {
-        return \Filament\Support\Enums\Width::SevenExtraLarge;
+        return \Filament\Support\Enums\MaxWidth::SevenExtraLarge;
     }
 
     protected function mutateFormDataBeforeCreate(array $data): array
