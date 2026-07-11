@@ -18,8 +18,8 @@ class MantencionResource extends Resource
 {
     protected static ?string $model = Mantencion::class;
 
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-wrench-screwdriver';
-    protected static string|\UnitEnum|null $navigationGroup = 'Operaciones';
+    protected static ?string $navigationIcon = 'heroicon-o-wrench-screwdriver';
+    protected static ?string $navigationGroup = 'Operaciones';
     protected static ?int $navigationSort = 3;
 
     protected static ?string $modelLabel = 'Orden de Mantenimiento';

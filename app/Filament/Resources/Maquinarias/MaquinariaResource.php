@@ -18,9 +18,9 @@ class MaquinariaResource extends Resource
 {
     protected static ?string $model = Maquinaria::class;
 
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-cube';
+    protected static ?string $navigationIcon = 'heroicon-o-cube';
     
-    protected static string|\UnitEnum|null $navigationGroup = 'Inventario';
+    protected static ?string $navigationGroup = 'Inventario';
 
     protected static ?string $navigationLabel = 'Maquinarias / Equipos';
     protected static ?int $navigationSort = 1;

@@ -18,8 +18,8 @@ class RepuestoResource extends Resource
 {
     protected static ?string $model = Repuesto::class;
 
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-cube';
-    protected static string|\UnitEnum|null $navigationGroup = 'Inventario';
+    protected static ?string $navigationIcon = 'heroicon-o-cube';
+    protected static ?string $navigationGroup = 'Inventario';
     protected static ?int $navigationSort = 2;
 
     protected static ?string $modelLabel = 'Repuesto';
