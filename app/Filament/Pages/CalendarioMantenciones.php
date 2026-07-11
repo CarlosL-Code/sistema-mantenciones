@@ -12,7 +12,7 @@ class CalendarioMantenciones extends Page
     protected static ?int $navigationSort = 2;
     protected static ?string $title = 'Calendario de Mantenciones';
     
-    protected string $view = 'filament.pages.calendario-mantenciones';
+    protected static string $view = 'filament.pages.calendario-mantenciones';
 
     protected function getViewData(): array
     {
