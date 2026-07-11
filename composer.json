@@ -8,14 +8,14 @@
     "require": {
         "php": "^8.3",
         "barryvdh/laravel-dompdf": "*",
-        "bezhansalleh/filament-shield": "^4.2",
+        "bezhansalleh/filament-shield": "*",
         "dompdf/dompdf": "^3.1",
         "filament/filament": "^3.2",
         "flowframe/laravel-trend": "^0.5.0",
         "laravel/framework": "^13.8",
         "laravel/tinker": "^3.0",
         "maatwebsite/excel": "^3.1",
-        "saade/filament-autograph": "^4.1",
+        "saade/filament-autograph": "*",
         "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/laravel-activitylog": "^4.12",
         "spatie/laravel-permission": "^7.4"
