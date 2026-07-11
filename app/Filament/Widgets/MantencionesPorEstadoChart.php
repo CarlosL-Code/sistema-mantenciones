@@ -9,7 +9,7 @@ class MantencionesPorEstadoChart extends ChartWidget
 {
     protected static ?string $heading = 'Estado de Órdenes de Trabajo';
     protected static ?int $sort = 3;
-    protected ?string $maxHeight = '250px'; // Matching height
+    protected static ?string $maxHeight = '250px'; // Matching height
     protected int | string | array $columnSpan = ['sm' => 1, 'md' => 1, 'lg' => 1, 'xl' => 1];
 
     protected function getData(): array

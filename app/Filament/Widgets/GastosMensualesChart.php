@@ -8,7 +8,7 @@ class GastosMensualesChart extends ChartWidget
 {
     protected static ?string $heading = 'Resumen de Gastos Mensuales';
     protected static ?int $sort = 2;
-    protected ?string $maxHeight = '250px'; 
+    protected static ?string $maxHeight = '250px'; 
     protected int | string | array $columnSpan = ['sm' => 1, 'md' => 1, 'lg' => 1, 'xl' => 1];
 
     protected function getData(): array

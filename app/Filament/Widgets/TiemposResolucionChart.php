@@ -11,7 +11,7 @@ class TiemposResolucionChart extends ChartWidget
     protected static ?string $heading = 'Mantenimientos vs Costos Externos por Mes';
     protected static ?int $sort = 2;
     protected int | string | array $columnSpan = 'full';
-    protected ?string $maxHeight = '300px';
+    protected static ?string $maxHeight = '300px';
 
     protected function getData(): array
     {
