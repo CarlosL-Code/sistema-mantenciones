@@ -14,7 +14,7 @@ class MantenimientoCalendarWidget extends Widget implements HasActions, HasForms
     use InteractsWithActions;
     use InteractsWithForms;
 
-    protected string $view = 'filament.widgets.mantenimiento-calendar-widget';
+    protected static string $view = 'filament.widgets.mantenimiento-calendar-widget';
 
     protected static ?int $sort = 1;
     
