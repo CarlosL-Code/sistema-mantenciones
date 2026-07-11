@@ -8,8 +8,8 @@ use App\Filament\Widgets\UltimosActivosTable;
 
 class MetricasActivos extends Page
 {
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-chart-pie';
-    protected static string|\UnitEnum|null $navigationGroup = 'Inventario';
+    protected static ?string $navigationIcon = 'heroicon-o-chart-pie';
+    protected static ?string $navigationGroup = 'Inventario';
     
     protected static ?string $navigationLabel = 'Métricas de Inventario';
     

@@ -7,8 +7,8 @@ use App\Models\Mantencion;
 
 class CalendarioMantenciones extends Page
 {
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-calendar-days';
-    protected static string|\UnitEnum|null $navigationGroup = 'Operaciones';
+    protected static ?string $navigationIcon = 'heroicon-o-calendar-days';
+    protected static ?string $navigationGroup = 'Operaciones';
     protected static ?int $navigationSort = 2;
     protected static ?string $title = 'Calendario de Mantenciones';
     
