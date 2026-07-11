@@ -6,7 +6,7 @@ use Filament\Forms\Form;
 
 class MaquinariaForm
 {
-    public static function configure(Form $form): Schema
+    public static function configure(Form $form): Form
     {
         return $schema
             ->columns(3)

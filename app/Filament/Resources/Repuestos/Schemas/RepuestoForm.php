@@ -8,7 +8,7 @@ use Filament\Forms\Components\TextInput;
 
 class RepuestoForm
 {
-    public static function configure(Form $form): Schema
+    public static function configure(Form $form): Form
     {
         return $schema
             ->components([

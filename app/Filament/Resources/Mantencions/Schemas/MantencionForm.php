@@ -6,7 +6,7 @@ use Filament\Forms\Form;
 
 class MantencionForm
 {
-    public static function configure(Form $form): Schema
+    public static function configure(Form $form): Form
     {
         return $schema
             ->components([

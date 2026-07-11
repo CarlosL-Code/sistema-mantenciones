@@ -15,7 +15,7 @@ class ActivitiesRelationManager extends RelationManager
     protected static ?string $title = 'Historial de Actividad';
     protected static ?string $recordTitleAttribute = 'description';
 
-    public function form(Form $form): Schema
+    public function form(Form $form): Form
     {
         return $schema
             ->components([

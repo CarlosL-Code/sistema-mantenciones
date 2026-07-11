@@ -28,7 +28,7 @@ class MaquinariaResource extends Resource
     protected static ?string $modelLabel = 'Activo';
     protected static ?string $pluralModelLabel = 'Activos';
 
-    public static function form(Form $form): Schema
+    public static function form(Form $form): Form
     {
         return MaquinariaForm::configure($form);
     }

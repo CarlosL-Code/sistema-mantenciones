@@ -25,7 +25,7 @@ class MantencionResource extends Resource
     protected static ?string $modelLabel = 'Orden de Mantenimiento';
     protected static ?string $pluralModelLabel = 'Órdenes de Mantenimiento';
 
-    public static function form(Form $form): Schema
+    public static function form(Form $form): Form
     {
         return MantencionForm::configure($form);
     }

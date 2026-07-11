@@ -40,7 +40,7 @@ class ProveedorResource extends Resource
         return 'heroicon-o-truck';
     }
 
-    public static function form(Form $form): Schema
+    public static function form(Form $form): Form
     {
         return ProveedorForm::configure($form);
     }

@@ -42,7 +42,7 @@ class RoleResource extends Resource
     protected static ?string $recordTitleAttribute = 'name';
 
     #[Override]
-    public static function form(Form $form): Schema
+    public static function form(Form $form): Form
     {
         return $schema
             ->components([

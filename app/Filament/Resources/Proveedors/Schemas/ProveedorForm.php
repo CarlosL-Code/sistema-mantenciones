@@ -7,7 +7,7 @@ use Filament\Forms\Form;
 
 class ProveedorForm
 {
-    public static function configure(Form $form): Schema
+    public static function configure(Form $form): Form
     {
         return $schema
             ->components([

@@ -18,7 +18,7 @@ class IngresosRelationManager extends RelationManager
     protected static ?string $title = 'Historial de Compras / Ingresos';
     protected static ?string $recordTitleAttribute = 'id';
 
-    public function form(Form $form): Schema
+    public function form(Form $form): Form
     {
         return $schema
             ->schema([

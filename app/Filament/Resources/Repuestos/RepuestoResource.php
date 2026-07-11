@@ -25,7 +25,7 @@ class RepuestoResource extends Resource
     protected static ?string $modelLabel = 'Repuesto';
     protected static ?string $pluralModelLabel = 'Repuestos';
 
-    public static function form(Form $form): Schema
+    public static function form(Form $form): Form
     {
         return RepuestoForm::configure($form);
     }

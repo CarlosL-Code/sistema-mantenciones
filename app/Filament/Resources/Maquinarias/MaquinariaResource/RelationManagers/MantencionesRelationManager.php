@@ -14,7 +14,7 @@ class MantencionesRelationManager extends RelationManager
 
     protected static ?string $recordTitleAttribute = 'id';
 
-    public function form(Form $form): Schema
+    public function form(Form $form): Form
     {
         return $schema
             ->components([
