@@ -117,7 +117,6 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->plugins([
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
-                    ->navigationGroup('Administración')
             ])
             ->navigationGroups([
                 \Filament\Navigation\NavigationGroup::make()
