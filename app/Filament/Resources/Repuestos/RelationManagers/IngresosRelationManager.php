@@ -3,7 +3,7 @@
 namespace App\Filament\Resources\Repuestos\RelationManagers;
 
 use Filament\Forms;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -18,7 +18,7 @@ class IngresosRelationManager extends RelationManager
     protected static ?string $title = 'Historial de Compras / Ingresos';
     protected static ?string $recordTitleAttribute = 'id';
 
-    public function form(Schema $schema): Schema
+    public function form(Form $form): Schema
     {
         return $schema
             ->schema([

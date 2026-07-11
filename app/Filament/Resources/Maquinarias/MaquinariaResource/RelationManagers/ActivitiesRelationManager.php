@@ -3,7 +3,7 @@
 namespace App\Filament\Resources\Maquinarias\MaquinariaResource\RelationManagers;
 
 use Filament\Forms;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -15,7 +15,7 @@ class ActivitiesRelationManager extends RelationManager
     protected static ?string $title = 'Historial de Actividad';
     protected static ?string $recordTitleAttribute = 'description';
 
-    public function form(Schema $schema): Schema
+    public function form(Form $form): Schema
     {
         return $schema
             ->components([

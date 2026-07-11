@@ -10,7 +10,7 @@ use App\Filament\Resources\Proveedors\Tables\ProveedorsTable;
 use App\Models\Proveedor;
 use BackedEnum;
 use Filament\Resources\Resource;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
@@ -40,9 +40,9 @@ class ProveedorResource extends Resource
         return 'heroicon-o-truck';
     }
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form $form): Schema
     {
-        return ProveedorForm::configure($schema);
+        return ProveedorForm::configure($form);
     }
 
     public static function table(Table $table): Table

@@ -2,13 +2,13 @@
 
 namespace App\Filament\Resources\Repuestos\Schemas;
 
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 
 use Filament\Forms\Components\TextInput;
 
 class RepuestoForm
 {
-    public static function configure(Schema $schema): Schema
+    public static function configure(Form $form): Schema
     {
         return $schema
             ->components([

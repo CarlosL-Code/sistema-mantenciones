@@ -10,7 +10,7 @@ use App\Filament\Resources\Maquinarias\Tables\MaquinariasTable;
 use App\Models\Maquinaria;
 use BackedEnum;
 use Filament\Resources\Resource;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
@@ -28,9 +28,9 @@ class MaquinariaResource extends Resource
     protected static ?string $modelLabel = 'Activo';
     protected static ?string $pluralModelLabel = 'Activos';
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form $form): Schema
     {
-        return MaquinariaForm::configure($schema);
+        return MaquinariaForm::configure($form);
     }
 
     public static function table(Table $table): Table
@@ -38,7 +38,7 @@ class MaquinariaResource extends Resource
         return MaquinariasTable::configure($table);
     }
 
-    public static function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public static function infolist(\Filament\Forms\Form $schema): \Filament\Forms\Form
     {
         return $schema
             ->components([

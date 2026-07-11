@@ -22,7 +22,7 @@ use Filament\Panel;
 use Filament\Resources\Resource;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Support\Enums\FontWeight;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -42,7 +42,7 @@ class RoleResource extends Resource
     protected static ?string $recordTitleAttribute = 'name';
 
     #[Override]
-    public static function form(Schema $schema): Schema
+    public static function form(Form $form): Schema
     {
         return $schema
             ->components([

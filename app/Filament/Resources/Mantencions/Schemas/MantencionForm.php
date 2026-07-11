@@ -2,11 +2,11 @@
 
 namespace App\Filament\Resources\Mantencions\Schemas;
 
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 
 class MantencionForm
 {
-    public static function configure(Schema $schema): Schema
+    public static function configure(Form $form): Schema
     {
         return $schema
             ->components([

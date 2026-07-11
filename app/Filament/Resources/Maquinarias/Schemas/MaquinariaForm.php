@@ -2,11 +2,11 @@
 
 namespace App\Filament\Resources\Maquinarias\Schemas;
 
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 
 class MaquinariaForm
 {
-    public static function configure(Schema $schema): Schema
+    public static function configure(Form $form): Schema
     {
         return $schema
             ->columns(3)

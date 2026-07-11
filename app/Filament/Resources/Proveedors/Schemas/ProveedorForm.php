@@ -3,11 +3,11 @@
 namespace App\Filament\Resources\Proveedors\Schemas;
 
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 
 class ProveedorForm
 {
-    public static function configure(Schema $schema): Schema
+    public static function configure(Form $form): Schema
     {
         return $schema
             ->components([

@@ -10,7 +10,7 @@ use App\Filament\Resources\Repuestos\Tables\RepuestosTable;
 use App\Models\Repuesto;
 use BackedEnum;
 use Filament\Resources\Resource;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
@@ -25,9 +25,9 @@ class RepuestoResource extends Resource
     protected static ?string $modelLabel = 'Repuesto';
     protected static ?string $pluralModelLabel = 'Repuestos';
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form $form): Schema
     {
-        return RepuestoForm::configure($schema);
+        return RepuestoForm::configure($form);
     }
 
     public static function table(Table $table): Table

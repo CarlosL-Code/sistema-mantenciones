@@ -10,7 +10,7 @@ use App\Filament\Resources\Mantencions\Tables\MantencionsTable;
 use App\Models\Mantencion;
 use BackedEnum;
 use Filament\Resources\Resource;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
@@ -25,9 +25,9 @@ class MantencionResource extends Resource
     protected static ?string $modelLabel = 'Orden de Mantenimiento';
     protected static ?string $pluralModelLabel = 'Órdenes de Mantenimiento';
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form $form): Schema
     {
-        return MantencionForm::configure($schema);
+        return MantencionForm::configure($form);
     }
 
     public static function table(Table $table): Table

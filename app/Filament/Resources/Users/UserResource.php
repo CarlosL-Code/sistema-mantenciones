@@ -10,7 +10,7 @@ use App\Filament\Resources\Users\Tables\UsersTable;
 use App\Models\User;
 use BackedEnum;
 use Filament\Resources\Resource;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
@@ -25,9 +25,9 @@ class UserResource extends Resource
     protected static ?string $modelLabel = 'Usuario';
     protected static ?string $pluralModelLabel = 'Usuarios';
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form $form): Schema
     {
-        return UserForm::configure($schema);
+        return UserForm::configure($form);
     }
 
     public static function table(Table $table): Table
