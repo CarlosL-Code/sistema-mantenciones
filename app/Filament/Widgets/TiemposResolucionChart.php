@@ -8,7 +8,7 @@ use Carbon\Carbon;
 
 class TiemposResolucionChart extends ChartWidget
 {
-    protected ?string $heading = 'Mantenimientos vs Costos Externos por Mes';
+    protected static ?string $heading = 'Mantenimientos vs Costos Externos por Mes';
     protected static ?int $sort = 2;
     protected int | string | array $columnSpan = 'full';
     protected ?string $maxHeight = '300px';

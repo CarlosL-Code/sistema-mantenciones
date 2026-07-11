@@ -10,7 +10,7 @@ use Flowframe\Trend\TrendValue;
 class NuevosActivosChart extends ChartWidget
 {
     protected static bool $isDiscovered = false;
-    protected ?string $heading = 'Ingresos de Activos en el Año';
+    protected static ?string $heading = 'Ingresos de Activos en el Año';
     protected static ?int $sort = 2;
     protected ?string $maxHeight = '250px';
     protected int | string | array $columnSpan = 'full';

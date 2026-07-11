@@ -6,7 +6,7 @@ use Filament\Widgets\ChartWidget;
 
 class GastosMensualesChart extends ChartWidget
 {
-    protected ?string $heading = 'Resumen de Gastos Mensuales';
+    protected static ?string $heading = 'Resumen de Gastos Mensuales';
     protected static ?int $sort = 2;
     protected ?string $maxHeight = '250px'; 
     protected int | string | array $columnSpan = ['sm' => 1, 'md' => 1, 'lg' => 1, 'xl' => 1];
