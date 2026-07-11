@@ -38,13 +38,13 @@ class MaquinariaResource extends Resource
         return MaquinariasTable::configure($table);
     }
 
-    public static function infolist(\Filament\Forms\Form $schema): \Filament\Forms\Form
+    public static function infolist(\Filament\Infolists\Infolist $infolist): \Filament\Infolists\Infolist
     {
-        return $schema
-            ->components([
-                \Filament\Schemas\Components\Grid::make(3)->schema([
-                    \Filament\Schemas\Components\Group::make([
-                        \Filament\Schemas\Components\Section::make('Información General')
+        return $infolist
+            ->schema([
+                \Filament\Infolists\Components\Grid::make(3)->schema([
+                    \Filament\Infolists\Components\Group::make([
+                        \Filament\Infolists\Components\Section::make('Información General')
                             ->schema([
                                 \Filament\Infolists\Components\TextEntry::make('nombre')
                                     ->size(\Filament\Support\Enums\TextSize::Large)
@@ -62,7 +62,7 @@ class MaquinariaResource extends Resource
                                     ->label('Área Responsable'),
                             ])->columns(2),
                             
-                        \Filament\Schemas\Components\Section::make('Detalles Técnicos')
+                        \Filament\Infolists\Components\Section::make('Detalles Técnicos')
                             ->schema([
                                 \Filament\Infolists\Components\TextEntry::make('marca'),
                                 \Filament\Infolists\Components\TextEntry::make('modelo'),
@@ -73,8 +73,8 @@ class MaquinariaResource extends Resource
                                     ->columnSpanFull(),
                             ])->columns(2),
                     ])->columnSpan(2),
-                    \Filament\Schemas\Components\Group::make([
-                        \Filament\Schemas\Components\Section::make('Código QR')
+                    \Filament\Infolists\Components\Group::make([
+                        \Filament\Infolists\Components\Section::make('Código QR')
                             ->description('Escanea para ver esta ficha')
                             ->schema([
                                 \Filament\Infolists\Components\TextEntry::make('qr')
